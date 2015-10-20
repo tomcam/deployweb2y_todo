@@ -1,0 +1,10 @@
+{{extend 'layout.html'}}
+{{if 'message' in globals():}}
+<h3>{{=message}}</h3>
+{{pass}}
+{{=grid}}
+<h2>
+{{=A(T('Main'), _href=URL('index'))}} 
+{{=A(T('Assignments'), _href=URL('assignments'))}} 
+{{=A(T('Tasks'), _href=URL('task'))}}
+</h2>
